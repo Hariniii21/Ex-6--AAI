@@ -1,12 +1,11 @@
-<H3>NAME: Harini S </H3>
-<H3>REGISTER NO: 212223240048 </H3>
-
-## <h3>Aim:</h3>
-To perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques.
- 
- 
-## <h3>Algorithm:</h3>
-
+<H3>NAME: Harini S</H3>
+<H3>REGISTER NO.: 212223240048</H3>
+<H3>EX. NO.6</H3>
+<H3>DATE: 28-10-2025</H3>
+<H1 ALIGN =CENTER>Implementation of Semantic ANalysis</H1>
+<H3>Aim: to perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques. </H3> 
+ <BR>
+<h3>Algorithm:</h3>
 Step 1: Import the nltk library.<br>
 Step 2: Download the 'punkt', 'wordnet', and 'averaged_perceptron_tagger' resources.<br>
 Step 3:Accept user input for the text.<br>
@@ -17,17 +16,19 @@ Step 5:Iterate through each word in the tokenized text.<br>
 •	For each verb , iterate through its synsets (sets of synonyms) using wordnet.synsets(word).<br>
 •	Extract synonyms and antonyms using lemma.name() and lemma.antonyms()[0].name() respectively.<br>
 •	Print the unique sets of synonyms and antonyms.
+<H3>Program:</H3>
 
-## <H3>Program:</H3>
-
-```python
+```
 import nltk
 #import wordnet
-nltk.download( 'punkt' )
+nltk.download( 'punkt_tab' )
 nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
-nltk.download( 'averaged_perceptron_tagger' )
+nltk.download( 'averaged_perceptron_tagger_eng' )
 sentence=input ()
+# Print the parts of speech
+for word, tag in pos_tags:
+    print(word, tag)
 # Tokenize the sentence into words
 words = word_tokenize(sentence)
 # Identify the parts of speech for each word
@@ -48,12 +49,15 @@ print ( "Synonyms : " ,set (synonyms) )
 print ( "Antonyms : " ,set(antonyms) )
 ```
 
-## <H3>Output</H3>
-![Screenshot 2025-05-14 134830](https://github.com/user-attachments/assets/a4d6f8ec-2f42-4d0a-b1fb-40cdc63b33e7)
+<H3>Output</H3>
 
-![Screenshot 2025-05-14 134835](https://github.com/user-attachments/assets/b0754620-2e0c-4dde-8036-10c42d84ffd3)
+<img width="592" height="148" alt="image" src="https://github.com/user-attachments/assets/2fcef356-c1ca-4577-9b39-010be831f684" />
 
-![Screenshot 2025-05-14 134850](https://github.com/user-attachments/assets/453a7084-c781-4827-bbbf-048fabf0a7d6)
+<img width="467" height="32" alt="image" src="https://github.com/user-attachments/assets/a2f054a5-b19b-458d-af64-74c0923f8d96" />
+<br>
+<img width="145" height="240" alt="image" src="https://github.com/user-attachments/assets/4fcf170a-55e5-4278-bf4e-76bc8f8cd453" />
 
-## <H3>Result:</H3>
+<img width="1732" height="65" alt="image" src="https://github.com/user-attachments/assets/d2106c88-e828-4a4b-b6de-4d04fd19f2c7" />
+
+<H3>Result:</H3>
 Thus ,the program to perform the Parts of Speech identification and Synonymis executed sucessfully.
